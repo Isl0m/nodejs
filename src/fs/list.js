@@ -1,3 +1,9 @@
 export const list = async () => {
-    // Write your code here 
+const fs = require('fs');
+
+fs.readdir('./', function (err, list) {
+    if (err) console.log('FS operation failed');
+    
+    console.log(list)
+});
 };

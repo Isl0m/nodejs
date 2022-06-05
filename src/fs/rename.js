@@ -1,3 +1,7 @@
 export const rename = async () => {
-    // Write your code here 
+    var fs = require('fs');
+    fs.rename('./files/wrongFilename.txt', './files/wrongFilename.md', function(err) {
+            if ( err ) console.log('FS operation failed');    
+    });
+ 
 };
